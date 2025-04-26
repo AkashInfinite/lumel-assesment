@@ -1,7 +1,6 @@
 import { useState, useCallback, useMemo } from "react";
 import TableRow from "./TableRow";
 import './HierarchialTable.css';
-import React from "react";
 const RecursiveTableRow = ({ row, originalData, onValueChange, inputValues, onInputChange, level }: { row: any; originalData: any; onValueChange: (id: any, value: any) => void; inputValues: Record<string, any>; onInputChange: (id: any, value: any) => void, level: number }) => {
     const originalRow = originalData.rows.find((r:any) => r.id === row.id) || originalData.rows.flatMap((r: any) => r.children || []).find((r: any) => r.id === row.id);
     const hasChildren = row.children && row.children.length > 0;
@@ -47,6 +46,7 @@ export default function HierarchicalTable({ data }: { data: any }) {
     }, []);
   
     const updateParentValues = useCallback((updatedId: any, newValue: any, currentData: any) => {
+      if(newValue){}
       const findAndModify = (items: any) => {
         for (let i = 0; i < items.length; i++) {
           const item = items[i];
