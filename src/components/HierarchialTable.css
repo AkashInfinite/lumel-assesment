@@ -1,0 +1,64 @@
+.hierarchical-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .hierarchical-table th,
+  .hierarchical-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .hierarchical-table th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .hierarchical-table tbody tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .hierarchical-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .hierarchical-table tfoot td {
+    padding: 14px 16px;
+    font-weight: bold;
+    background-color: #e0f7fa; 
+    border-top: 2px solid #80deea;
+  }
+  
+  .hierarchical-table input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .variance {
+    font-size: 0.9rem;
+    color: #777;
+    margin-left: 8px;
+  }
+  
+  .row-level-1 {
+    padding-left: 20px;
+  }
+  
+  .row-level-2 {
+    padding-left: 40px;
+    font-style: italic;
+    font-size: small;
+    color: #555;
+  }
+  
